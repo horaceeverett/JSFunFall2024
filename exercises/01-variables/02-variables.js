@@ -4,4 +4,4 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-let const myYear = 2024;
+ const myYear = 2024;
