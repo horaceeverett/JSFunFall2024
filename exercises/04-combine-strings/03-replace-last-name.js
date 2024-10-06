@@ -16,3 +16,7 @@ let newLastName = "Fernandez"; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let firstName = fullName.split(" ")[0]; 
+fullName = `${firstName} ${newLastName}`; 
+console.log(fullName);
