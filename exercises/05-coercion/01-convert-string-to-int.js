@@ -7,5 +7,6 @@ let answer = "55"; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
+let newInt = 
 answer = newInt(answer);
 console.log(answer); 
