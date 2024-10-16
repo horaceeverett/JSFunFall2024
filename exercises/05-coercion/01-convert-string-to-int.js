@@ -9,4 +9,4 @@ let answer = "55"; // e.g.
 
 let newInt = 
 answer = newInt(answer);
-console.log(answer); 
+

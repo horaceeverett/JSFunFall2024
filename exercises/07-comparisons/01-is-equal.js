@@ -12,3 +12,5 @@ let userInput2 = "39"; // e,g,
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+isEqual = userInput1 === userInput2;

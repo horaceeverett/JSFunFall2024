@@ -10,3 +10,9 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+const countNumberOfDigits = (num) => {
+    // Convert the number to a string and get its length
+    return num.toString().length;
+  };

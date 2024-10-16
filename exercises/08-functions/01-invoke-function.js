@@ -15,3 +15,9 @@ const calculateTotal = (subtotal, tax) => {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+let subtotal = 50.0;
+let tax = 0.02; // 2% as a decimal
+
+let total = calculateTotal(subtotal, tax);
