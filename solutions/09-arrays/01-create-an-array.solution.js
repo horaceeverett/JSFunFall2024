@@ -5,7 +5,8 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-
-let restaurants = ["Pasta Palace", "Red Robin", "Longhorn"];
-
-console.log(restaurants);
+let restaurants = [
+  "Lost & Found Bar & Kitchen",
+  "Dinosaur Bar-B-Que",
+  "Karavalli",
+];
