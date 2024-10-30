@@ -8,3 +8,13 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+
+let myDog = {
+    name: "Karrington",
+    breed: "Yorkie",
+    age: 5,
+    owners: ["Marion", "Horace"]
+};
+
+console.log(myDog);
