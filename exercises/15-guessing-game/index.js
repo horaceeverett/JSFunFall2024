@@ -12,20 +12,31 @@ import prompt from "picoprompt";
 
 const randomNumber = Math.floor(Math.random() * 10) + 1;
 
-const askGuess = async () => {
-  while (true) {
-    // Prompt the user to guess the number
-    const answer = await prompt("Guess a number between 1 and 10: ");
-    const guess = parseInt(answer, 10);
+let guessedCorrectly = false;
 
-    if (guess === randomNumber) {
-      console.log("Congratulations! You guessed the right number.");
-      break;
-    } else {
-      console.log("Wrong guess. Try again!");
-    }
+while (!guessedCorrectly) {
+  
+  const userGuess = parseInt(prompt("Guess a number from 1 to 10:"), 10);
+
+  if (isNaN(userGuess)) {
+    console.log("Please enter a valid number.");
+    continue;
   }
-};
 
-askGuess();
+  if (userGuess < 1 || userGuess > 10) {
+    console.log("Please pick a number between 1 and 10.");
+    continue;
+  }
+
+  if (userGuess === randomNumber) {
+    console.log("Congratulations! You guessed the correct number!");
+    guessedCorrectly = true;
+  } else if (userGuess < randomNumber) {
+    console.log("Too low! Try again.");
+  } else if (userGuess > randomNumber) {
+    console.log("Too high! Try again.");
+  }
+}
+
+
 
