@@ -30,20 +30,23 @@ const subtract = (num1, num2) => {
  * }
  * console.log( calculate(5, 10, add) ); // 15
  * console.log( calculate(7, 3, subtract) ); // 4
- *
+ 
+
  * @param {number} num1
  * @param {number} num2
  * @param {function} callback
  * @returns {number}
  */
 
+
 const calculate = (num1, num2, callback) => {
   // WRITE YOUR ANSWER IN HERE
+  return callback(num1, num2);
 };
 
 // Uncomment me to test in Quokka
-// console.log( calculate(5, 10, add) );
-// console.log( calculate(7, 3, subtract) );
+console.log( calculate(5, 10, add) );
+console.log( calculate(7, 3, subtract) );
 
 // IGNORE THIS BELOW. It is for the tests.
 

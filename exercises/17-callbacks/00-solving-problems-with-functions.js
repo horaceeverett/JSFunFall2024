@@ -10,7 +10,7 @@ const returnAnswer = (personName) => {
 };
 
 // Uncomment me to test in Quokka
-// console.log(returnAnswer("Lesley")); // Expected output: "Lesley"
+console.log(returnAnswer("Lesley")); // Expected output: "Lesley"
 
 // DO NOT DELETE BELOW. It is for the tests.
 
