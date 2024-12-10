@@ -45,9 +45,10 @@
             <label for="email" class="form-label">Email</label>
             <input id="email" type="email" class="form-control" />
 
-            <!-- Show me if the email address is empty.
-              You can use the CSS property "display: block" to do this. -->
-            <div class="invalid-feedback">Please enter email address.</div>
+            <!-- I added an ID here -->
+            <div id="emailError" class="invalid-feedback">
+              Please enter email address.
+            </div>
           </div>
 
           <!-- Role or title-->
@@ -91,18 +92,20 @@
           <div class="card-body">
             <div class="mb-3">
               Email:
-              <!-- Insert email address in this <span> here -->
-              <span></span>
+              <!-- I added an ID here -->
+              <span id="emailDisplay"></span>
             </div>
 
             <div class="mb-3">
               Title or Role:
-              <!-- Insert title in this <span> here -->
-              <span></span>
+              <!-- I added an ID here  -->
+              <span id="titleDisplay"></span>
             </div>
 
-            <!-- This is hidden. Display this by removing the "hidden" class -->
-            <div class="hidden">✓ Include promotional offers</div>
+            <!-- I added an ID here -->
+            <div id="promotionDisplay" class="hidden">
+              ✓ Include promotional offers
+            </div>
           </div>
         </div>
       </div>
