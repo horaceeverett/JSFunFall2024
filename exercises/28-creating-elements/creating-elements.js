@@ -30,6 +30,10 @@
      */
 
     // Write you JavaScript here
+
+    const paragraph = document.createElement("p");
+paragraph.className = "italic"; // Add the 'italic' class
+paragraph.textContent = `No results for ${ocean} found.`;
   };
 
   document
@@ -58,13 +62,18 @@
    */
 
   // Update me
-  const movieHtml = `<img src="_____" />
-  <div class="flex-auto my-4">
-    <h1 class="text-2xl mb-4">_____ <small>(_____)</small></h1>
-    <p clas="mb-4">
-      ${movie.description}
-    </p>
-  </div>`;
+  // Update the movieHtml with dynamic values
+const movieHtml = `<img src="${movie.imgSrc}" alt="${movie.title}" />
+<div class="flex-auto my-4">
+  <h1 class="text-2xl mb-4">${movie.title} <small>(${movie.year})</small></h1>
+  <p class="mb-4">
+    ${movie.description}
+  </p>
+</div>`;
+
+
+
+
 
   /**
    * STEP 2
@@ -73,14 +82,18 @@
    */
 
   // Write you JavaScript here
-
+  document.querySelector("#movieContainer").innerHTML = movieHtml;
   /**
    * Problem 3: Create a ChatGPT conversation from an array of objects
    *
    * STEP 1
    * Loop through the array of objects "conversationDialogues" below.
    */
-  const conversationDialogues = [
+  const conversationDialogues .forEach((dialogue) => {
+    const chatHtml = `
+      <div class="border-solid border-2 border-slate-200 rounded p-2 mb-4">
+        <div class="font-bold">${dialogue.author}</div>
+        <p>${dialogue.message}</p>
     {
       author: "You",
       message: "In JavaScript, what is a nested collection?",
