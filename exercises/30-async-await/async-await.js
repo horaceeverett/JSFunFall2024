@@ -1,3 +1,4 @@
+(function () {
 
 (function () {
   // Function to fetch a random dog image
@@ -31,11 +32,6 @@
   button.addEventListener('click', fetchDogImage);
 })();
 
-  
- 
- 
- 
- 
   /**
    * As a user, I should be able to click on the a button to see random dog images.
    * Please use async and await in this example.
